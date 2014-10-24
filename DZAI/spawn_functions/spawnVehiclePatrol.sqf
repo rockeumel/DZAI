@@ -28,7 +28,7 @@ call {
 		_maxCargoUnits = DZAI_boatCargoUnits;
 		_weapongrade = DZAI_boatUnitLevel call DZAI_getWeapongrade;
 		_vehSpawnPos = [(getMarkerPos "DZAI_centerMarker"),7000,random(360),2] call SHK_pos;
-		_vehSpawnPos = set [2,0];
+		_vehSpawnPos set [2,0];
 		_spawnMode = "NONE";
 	};
 	// isLandVehicle:
