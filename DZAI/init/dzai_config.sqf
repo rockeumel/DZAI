@@ -171,6 +171,29 @@ DZAI_airWeapons = [
 ];
 
 
+/*	AI Sea vehicle patrol settings. These AI vehicles will randomly travel on the sea.
+--------------------------------------------------------------------------------------------------------------------*/		
+
+//Global maximum number of active AI air vehicle patrols. Set at 0 to disable (Default: 0).							
+DZAI_maxSeaPatrols = 0;
+
+//Set minimum and maximum wait time in seconds to respawn an AI vehicle patrol after vehicle is destroyed or disabled. (Default: Min 600, Max 900).
+DZAI_respawnTMinB = 600;
+DZAI_respawnTMaxB = 900;
+
+//Classnames of air vehicle types to use, with the maximum amount of each type to spawn. Default: [["Zodiac",1]]
+DZAI_boatList = [["Zodiac",1],["PBX",1]];
+
+//Difficulty level of air vehicle patrol units. Difficulty level also affects unit loadout and loot. Possible values: 0 to 3 (Default: 3)
+DZAI_boatUnitLevel = 3;
+
+//Maximum number of gunner units per air vehicle. Limited by actual number of available gunner positions. (Default: 2)
+DZAI_boatGunnerUnits = 2;
+
+//Maximum number of cargo units per land vehicle. Limited by actual number of available cargo positions. (Default: 3)
+DZAI_boatCargoUnits = 3;
+
+
 /*AI Land vehicle patrol settings. These AI vehicles will randomly travel between different cities and towns.
 --------------------------------------------------------------------------------------------------------------------*/	
 
