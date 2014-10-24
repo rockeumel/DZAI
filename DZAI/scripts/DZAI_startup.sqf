@@ -137,7 +137,7 @@ if (DZAI_dynAISpawns) then {
 	_dynManagerV2 = [] execVM format ['%1\scripts\dynamicSpawn_manager.sqf',DZAI_directory];
 };
 
-if ((DZAI_maxHeliPatrols > 0) or {(DZAI_maxLandPatrols > 0)} or ){(DZAI_maxSeaPatrols > 0)} then {
+if ((DZAI_maxHeliPatrols > 0) or {(DZAI_maxLandPatrols > 0)} or {(DZAI_maxSeaPatrols > 0)}) then {
 	_nul = [] execVM format ['%1\scripts\setup_veh_patrols.sqf',DZAI_directory];
 };
 
